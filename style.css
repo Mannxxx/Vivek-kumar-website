@@ -1,0 +1,295 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quick-links {
+    background-color: #a20101;
+    padding: 10px 0;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.quick-links li {
+    margin-right: 20px;
+    font-size:x-large;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #ffd700;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content h1,
+.header-content h2,
+.header-content h3 {
+    margin: 0;
+}
+
+.professor-info {
+    padding: 20px;
+}
+
+.student-lists {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /* Ensure a side-by-side layout */
+}
+
+.student-list {
+    width: 48%; /* Adjust as needed */
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd; /* Optional: Add a border for separation */
+    margin-bottom: 20px; /* Optional: Adjust spacing between student lists */
+}
+
+
+/* Position the navigation bar fixed at the top */
+.quick-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5a0b0b; /* Add desired background color */
+    z-index: 1000; /* Ensure it's above other content */
+
+  }
+
+/* Your existing styles can go here */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button {
+    margin: 10px;
+}
+
+/* Style for the dialog box */
+.dialog-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  /* Style for the close button */
+  .close-btn {
+    float: right;
+    cursor: pointer;
+  }
+  /* Style for the content */
+  .dialog-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  /* Style for the buttons */
+  .btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    height: 860px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #000;
+}
+
+/* Slideshow images */
+.slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, left 1s ease-in-out;
+}
+
+.slideshow-container img.active {
+    left: 0;
+    opacity: 1;
+}
+
+.slideshow-container img.previous {
+    left: -100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #000;
+}
+
+/* Slideshow images */
+.slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, left 1s ease-in-out;
+}
+
+.slideshow-container img.active {
+    left: 0;
+    opacity: 1;
+}
+
+.slideshow-container img.previous {
+    left: -100%;
+}
+
+/* Research section */
+#research-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#research-section h2 {
+    margin-bottom: 10px;
+}
+
+#research-section p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.research-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.research-details, .research-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.research-details {
+    text-align: left;
+}
+
+.research-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.research-container.reverse {
+    flex-direction: row-reverse;
+}
+
+
+#students-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#students-section h2 {
+    margin-bottom: 10px;
+}
+
+#students-section p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+#students-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+#students-table th, #students-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#students-table th {
+    background-color: #ffffff;
+}
+
+.current-position {
+    text-align: center;
+}

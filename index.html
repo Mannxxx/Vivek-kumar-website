@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d69a3e365.js" crossorigin="anonymous"></script>
+    <title>Professor Vivek Kumar - IIT Delhi</title>
+
+    </head>
+    <body>
+
+        <style>
+            .students-lists {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .students-details {
+                /* border: 1px solid #ccc; */
+                /* padding: 20px; */
+                /* border-radius: 10px; */
+                width: 360px;
+                /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            }
+            /* .students-details img {
+                border-radius: 50%;
+            } */
+            .students-details h3 {
+                margin: 10px 0;
+                color: #333;
+            }
+            .students-details p {
+                margin: 5px 0;
+                color: #484747;
+                font-size: 15px;
+            }
+            .students-details .title {
+                color: #484747;
+                text-align: center;
+                font-size: 18px;
+            }
+            .students-details .co-supervisor {
+                /* font-weight: bold; */
+                font-size: 15px;
+                color: #484747;
+            }
+            .students-details a {
+                color: rgb(117, 16, 126);
+                text-decoration: none;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .students-details a i {
+                margin-right: 5px;
+            }
+        </style>
+
+    <style>
+      /* Float four columns side by side */
+      .research-column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+
+      /* Remove extra left and right margins, due to padding */
+      .research-row {margin: 0 -5px;}
+
+      /* Clear floats after the columns */
+      .research-row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .research-column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+
+      /* Style the counter cards */
+      .research-card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 50px;
+        /* text-align: center; */
+        background-color: #ffffff;
+        margin-bottom: 30px;
+        /* height:auto; */
+        /* position: relative; */
+      } 
+      
+      /* Style the citation and view button */
+        .citation {
+        font-style: italic;
+        color: #555;
+      }
+
+      .view-button {
+        display: inline-block;
+        bottom: 10px;
+        margin-left: 130px;
+        margin-top: 10px;
+        /* transform: translateX(-50%); */
+        padding: 8px 16px;
+        background-color: #020594;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        cursor:pointer;
+      }
+      
+      .view-button:hover {
+        background-color: #020594;
+      }
+
+      .read-more {
+        display: none;
+        margin-top: 10px;
+      }
+
+      .show-content .read-more {
+        display: block;
+      }
+          
+    </style>
+  </head>
+  <body>
+    <nav class="quick-links">
+        <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#awards-section">Awards</a></li>
+            <li><a href="#conferences-section">Conferences</a></li>
+            <li><a href="publications.html">Research Work</a></li>
+            <li><a href="students.html">Research Students</a></li>
+            <li><a href="#talks-section">Talks</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
+            <li><a href="pics vivek/CV.pdf" target="_blank" download>CV</a></li>
+        </ul>
+    </nav>
+
+       <style>
+        .skills-container {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 5px 10px;
+            margin: 5px;
+            font-size: 14px;
+        }
+    </style>
+
+  <header style="position: relative;">
+    <div class="header-content">
+        <img src="pics/logo2.png" width="600" alt="IIT Delhi Logo" style="margin: 0; margin-top: 30px;">
+        <h2 style="color: rgb(232, 56, 56); margin-left: 140px; font-weight: 520;"><strong>Centre for Rural Development and Technology</strong></h2>
+    </div>
+
+    <div class="header-content" style="position: absolute; top: 0; right: 0; display: flex; align-items: center;">
+        <img src="pics/vivek.png" alt="Professor's Photo" width="350" style="margin-top: 50px; margin-right: 100px;" />
+        <div>
+            <h2 style="color: rgb(224, 16, 16); margin-top: 10px">Professor Vivek Kumar</h2>
+            <p><strong>Email:</strong>vivekk@rdat.iitd.ac.in</p>
+            <p><strong>Mob:</strong>+91-9412619735</p>
+            <p><strong>Work:</strong> 91-11-26596581</p>
+            <p><strong>Office:</strong> Block III - 291, CRDT, IIT Delhi</p>
+            <br>
+            <a href="mailto:vivekk@rdat.iitd.ac.in" style="color: rgb(104, 21, 104); text-decoration: none;"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>
+            <a href="https://www.linkedin.com/in/" target="_blank" style="color: rgb(104, 21, 104); text-decoration: none; margin-left: 10px;"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <a href="https://scholar.google.co.in/citations?user=banSojwAAAAJ&hl=en" target="_blank" style="color: rgb(104, 21, 104) ; text-decoration: none; margin-left: 10px;"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Vivek-Kumar-233" target="_blank" style="color: rgb(104, 21, 104); text-decoration: none; margin-left: 10px;"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a>
+        </div>
+    </div>
+</header>
+
+
+    <section id="home-section" class="professor-info">
+        <!-- Content for Home section -->
+        <p>Hi, I am working as an <strong>Professor</strong> in CRDT at Indian Institute of Technology Delhi</p>
+        <p>I was also a visiting <strong>Research Professor</strong> in the Department of Chemical Engineering and Applied Sciences at University of Toronto.</p>
+
+        <div class="skills-container">
+          <h3 style="color: rgb(232, 56, 56); margin-left: -20px;">Skills and Expertise:</h3>
+          <!-- <div class="skills-title">Skills and Expertise</div> -->
+          <div class="skill-tag">Water and Wastewater Treatment</div>
+          <div class="skill-tag">Solid Waste Management</div>
+          <div class="skill-tag">Municipal Solid Waste Treatment</div>
+          <div class="skill-tag">Mathematical Modelling</div>
+          <div></div>
+          <div class="skill-tag">Pulp and Paper</div>
+          <!-- <div class="skill-tag">Waste Management</div> -->
+          <div class="skill-tag">Food Waste</div>
+          <div class="skill-tag">Biological Effluent Treatment Processes</div>
+          <div class="skill-tag">Process Design & Review</div>
+          <div class="skill-tag">Process Development</div>
+        </div>
+
+        <h3 style="color: rgb(232, 56, 56);">Research Interests:</h3>
+        <ul>
+            <li>Currently working as a Project Investigator for the Indo-UK project on valorizing waste from sugar cane and 
+            <br>
+              associated industries via pre-treatment, biotransformation, and process intensification.</li>
+            <li>Over 18 years in research and development, focusing on low-cost technologies for industrial waste treatment</li>
+            <li>Lead investigator in multiple projects related to industrial waste monitoring and treatment</li>
+        </ul> 
+
+        <h3 style="color: rgb(232, 56, 56);">Professional Degree:</h3>
+        <ul>
+            <li>2000, Ph. D.; Thesis title: “Waste management for small scale Pulp & Paper Industry” Indian
+                Institute of Technology, Delhi.</li>
+            <li>1992-94, Master of Engineering, Chemical Engineering with specialization (Industrial Pollution
+                Abatement), University of Roorkee, Roorkee.</li>
+            <li>1988-92, Bachelor of Engineering, Pulp & Paper Engineering, University of Roorkee, Roorkee.</li>
+        </ul>
+
+        <h3 style="color: rgb(232, 56, 56);">Areas of Research:</h3>
+        <div class="skills-container">
+            <div class="skills-title">Research Disciplines:</div>
+            <div class="skill-tag">Process Technology</div>
+            <div class="skill-tag">Pulp and Paper</div>
+            <div class="skill-tag">Environmental Engineering</div>
+        </div>
+            
+        <ul>
+            <li>Process Audit and Pinch analysis</li>
+            <li>Air Pollution Emission Inventory</li>
+            <li>Industrial Pollution Abatement</li>
+            <li>Environment</li>
+            <li>Human health & safety</li>
+            <li>Green product Development</li>
+            <li>Biomass Valorization</li>
+            <li>Utilization of Waste in composites and building materials</li>
+            <li>Clean & Sustainable Technologies</li>
+        </ul>
+
+        <h3 style="color: rgb(232, 56, 56);">Fields of Application:</h3>
+        <ul>
+            <li>Industrial Cleaner Production System</li>
+            <li>Pollution Abatement & Environmental Management</li>
+            <li>Treatment system assessment and design</li>
+            <li>New Product Development</li>
+            <li>Technology Diffusion, and community engagement</li>
+        </ul>
+
+        <h3 style="color: rgb(232, 56, 56);">Employment:</h3>
+        <ul>
+            <li>B.E. in Pulp & Paper Engineering (1988-1992)</li>
+            <li>M.E. in Chemical Engineering with a specialization in Industrial Pollution Abatement (1992-1994)</li>
+            <li>Ph.D. in Waste Management for Small Scale Pulp & Paper Industry (2000) from IIT Delhi</li>
+            <li>Post Doctoral Fellow at IWT, Applied Science University, Wolfenbuttel, Germany (2000-2001)</li>
+        </ul>
+
+        <h3 style="color: rgb(232, 56, 56);">Teaching Experience</h3>
+        <ul>
+          <li>Teaching and research at IIT Roorkee and IIT Delhi since 2004</li>
+          <li>Visiting Research Professor at the University of Toronto, Canada (June-July 2014)</li>
+        </ul>
+
+    </section>
+
+    <section id="awards-section" class="professor-info">
+        <h2 style ="color: rgb(232, 56, 56);">Awards, Honors, and Invited Talks</h2>
+        <ul>
+          <li>Elected International Director of Bio-Forest Product Division of American Institute of
+            Chemical Engineers (AIChE) for three years from 2014-2017</li>
+          <li> Invited Speaker at International Workshop on “Making Smart, Sustainable and Healthy
+            Cities: Learning’s from US, China and India” organized by University of Minnesota and
+            ICLEI-SA at 11-12 Jan 2016, New Delhi</li>
+        </ul>
+    </section>
+
+    <section id="conferences-section" class="professor-info">
+        <h2 style ="color: rgb(232, 56, 56);">Workshops and Conferences Organized</h2>
+        <ul>
+          <li>Organized Environmental Segment of IISF 2020, 22-25 Nov 2021</li>
+          <li>Co-organized Water Segment of IISF 2020, 22-25 Dec 2020</li>
+          <li>Organized Three Days Workshop on Technology Outreach as an Enabler for Inclusive & Sustainable Development – Tech4Seva, August 2019</li>
+          <li>Organized National Consultation Workshop on Rural Liquid Waste Management Programme on 29th January 2018. Supported by Ministry of Drinking Water and Sanitation</li>
+          <li>Organized National Consultation Workshop on Rural Solid Waste Management Programme on 29th January 2018. Supported by Ministry of Drinking Water and Sanitation</li>
+          <li>Conducted an interactive and exploratory tour “Srijan” for approximately 120 artisans from Madhya Pradesh to Uttar Pradesh. Supported by MP Council of Science & Technology, 2007</li>
+          <li>Organized a National Workshop on "Scientific Management of Natural Resources for Sustainable Development" from 14th – 18th May 2008</li>
+          <li>Organized 7th Round Table of NCRI on 20th Sep 2008 at IIT Roorkee Saharanpur Campus</li>
+        </ul>
+      </section>
+
+    
+    <!-- <section id="courses-section" class="professor-info"> -->
+         <!-- Content for Courses Taught section -->
+
+      <!-- <h3 style="color: rgb(232, 56, 56);">Courses Taught</h3>
+      <ul>
+        <li>Mechanical Vibrations</li>
+        <li>Finite Element method</li>
+        <li>Computational Method/Numerical Method</li>
+        <li>Theory of Machines</li>
+        <li>Mechanics of Solids</li>
+        <li>Engineering Mechanics</li>
+        <li>Acoustics</li>
+        <li>Vehicle Design and Dynamics</li>
+      </ul>
+
+      <h3 style="color: rgb(232, 56, 56);">Short Term Courses</h3>
+      <p>Courses related to Vibrations, Noise, FEM, numerical methods, etc</p>
+    </section>  -->
+
+    <!-- <section id="research-section">
+      <h2 style ="color: rgb(232, 56, 56);">Research Work</h2>
+      <p>Publications can be found at
+      <a href="https://orcid.org/0000-0002-0117-8607" style="color: blue;">https://orcid.org/0000-0001-7488-0213</a>
+      </p>
+
+      
+      <div class="research-container">
+          <div class="research-details">
+              <h3 style="color: rgb(232, 56, 56);"><u>Noise prediction from tyres</u></h3>
+              <p>This project deals with developing software for predicting noise from vibrating/moving tyres. It involves computational FE modeling.</p>
+              <h4 style="color: rgb(232, 56, 56);">Acoustic Metamaterials</h4>
+              <ul>
+                <li>Seismic Metamaterials </li>
+                <li>Metamaterials for cloaking </li>
+              </ul>
+          </div>
+          <div class="research-image">
+              <img src="https://via.placeholder.com/400x400.png?text=Research+Image+1" alt="Research Image 1">
+          </div>
+      </div>
+      
+      <div class="research-container reverse">
+          <div class="research-details">
+              <h3 style="color: rgb(232, 56, 56);"><u>Computational and Experimental demonstration on water filtration and de-clogging of water filter using sound and vibration</u></h3>
+              <p>This project entails simulating water filtration process through RO as well as normal filter. Acoustic de-clogging will be studied experimentally as well as using simulation. </p>
+          </div>
+          <div class="research-image">
+              <img src="https://via.placeholder.com/400x400.png?text=Research+Image+2" alt="Research Image 2">
+          </div>
+      </div>
+      
+      <div class="research-container">
+          <div class="research-details">
+              <h3 style="color: rgb(232, 56, 56);"><u>Developing impedance tube for Acoustic Characterization of materials.</u></h3>
+              <p>This project works on developing in house impedance tube for acoustic characterization of materials.</p>
+          </div>
+          <div class="research-image">
+              <img src="https://via.placeholder.com/400x400.png?text=Research+Image+3" alt="Research Image 3">
+          </div>
+      </div>
+
+      <div class="research-container reverse">
+        <div class="research-details">
+            <h3 style="color: rgb(232, 56, 56);"><u>Modeling of Split Ring dampers in Blisk </u></h3>
+            <p>This project involves doing FE simulation to predict damping in a dynamic system involving blisk and split ring. </p>
+        </div>
+        <div class="research-image">
+            <img src="https://via.placeholder.com/400x400.png?text=Research+Image+3" alt="Research Image 3">
+        </div>
+      </div>
+    </section> -->
+
+    <script>
+      const images = document.querySelectorAll('.slideshow-container img');
+      let currentIndex = 0;
+  
+      function showNextImage() {
+          images[currentIndex].classList.remove('active');
+          images[currentIndex].classList.add('previous');
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add('active');
+  
+          setTimeout(() => {
+              images.forEach(img => img.classList.remove('previous'));
+          }, 1000); // This timeout should match the transition duration
+      }
+  
+      setInterval(showNextImage, 5000);
+    </script>
+
+    <div class="slideshow-container">
+      <a href="https://www.youtube.com/watch?v=ocblgO68hm0" target="_blank" class="active">
+        <img src="https://img.youtube.com/vi/ocblgO68hm0/hqdefault.jpg" class="active" alt="Video 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=aefOg5QFPzw" target="_blank">
+        <img src="https://img.youtube.com/vi/aefOg5QFPzw/hqdefault.jpg" alt="Video 2">
+      </a>
+      <a href="https://x.com/Vibha_India/status/1281981606245199873" target="_blank">
+        <img src="pics vivek/X talk.jpg" alt="Vibha India Twitter Post">
+      </a>
+      <a href="https://www.facebook.com/photo/?fbid=3471397699631724&set=a.1205326106238906" target="_blank">
+        <img src="pics vivek/facebookTalk.png" alt="Facebook Photo">
+      </a>
+      <a href="https://satatsamadhanfoundation.com/advisory" target="_blank">
+        <img src="pics vivek/satat foundation.jpg" alt="Satat Samadhan Foundation Advisory">
+      </a>
+    </div>
+    
+<style>
+    #talks-section {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .talks-header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .talk-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .talk-item {
+        background-color: #fff;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .talk-date {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    .talk-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    .talk-details {
+        font-size: 16px;
+        color: #555;
+    }
+    </style>
+
+<section id="talks-section" class="professor-info">
+    <div class="talks-header" style ="color: rgb(232, 56, 56);">Special Lectures</div>
+    <ul class="talk-list">
+        <li class="talk-item">
+            <div class="talk-date">5th June 2022</div>
+            <div class="talk-title">Alternative Approaches for Environmental Management in Industry: Case study of Ganga Basin P&P sector</div>
+            <div class="talk-details">Invited lecture in iLEAPS World Environment Day 2022: A South Asian Perspective.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">9th February 2022</div>
+            <div class="talk-title">Wastewater Treatment and Reuse with Special Context of Rural Areas of Asian and African Countries</div>
+            <div class="talk-details">Invited talk under CEP-AARDO programme.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">30th March 2021</div>
+            <div class="talk-title">Alignment and Awareness event for Publicity of Department of Scientific and Industrial Research - Promoting Innovations in Individuals, Start-ups and MSMEs (DSIR-PRISM)</div>
+            <div class="talk-details">Invited event in association with Unnat Bharat Abhiyan (UBA), Ministry of Education; Rural Technology Action Group (RuTAG), IIT Delhi; and Smart Indian Hackathon (SIH), Ministry of Education.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">3rd December 2020</div>
+            <div class="talk-title">Biomass valorization and its life cycle assessment</div>
+            <div class="talk-details">TEQIP-III lecture.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">21st and 22nd January 2020</div>
+            <div class="talk-title">Special Lecture in 2 day National Workshop</div>
+            <div class="talk-details">Held at Inter-University Accelerator Centre (IUAC), organized by UGC.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">4-5 March 2020</div>
+            <div class="talk-title">Framework for Sustainability Analysis of Water Resource Management</div>
+            <div class="talk-details">Plenary Lecture in National Workshop on Ecosystem Adaptations of River Basins at GGSIP University Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">5th March 2020</div>
+            <div class="talk-title">ZLD Concept in Process Industries</div>
+            <div class="talk-details">Plenary lecture in Workshop On “Increasing Water Use Efficiency in Industries” organized by National Water Mission.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">13th October 2019</div>
+            <div class="talk-title">Prospects of Electro Coagulation for sewage treatment</div>
+            <div class="talk-details">Technical Lecture in All India Seminar on "Opportunities and Challenges in Water Supply and Sewerage System organized by Indian Water Works Association, Dehradun.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">16th January 2020</div>
+            <div class="talk-title">Ecological Perspective & Growth</div>
+            <div class="talk-details">Invited Lecture in FDP course -Technical challenges and solutions for resource limited communities organized by ARSD College, Delhi University.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">7th February 2019</div>
+            <div class="talk-title">Management of Air Pollution in Pulp & Paper Industry</div>
+            <div class="talk-details">Invited Lecture in the RSC-DCPPAI Training Programme at NCBM, Ballabhgarh organized by CPPRI.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">15-22 October 2018</div>
+            <div class="talk-title">Ecological Prospective of Growth</div>
+            <div class="talk-details">Invited Lecture in Faculty Development Programme on Sustainable Development organized by ARSD College, Delhi University.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">3-8 December 2018</div>
+            <div class="talk-title">Role of certification in organic agriculture for export agri-business</div>
+            <div class="talk-details">Invited Lecture in TEQUIP III +CEP Programme Agribusiness Planning and project appraisal techniques, organized by IIT Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">13-17 October 2018</div>
+            <div class="talk-title">Certification of organic crops</div>
+            <div class="talk-details">Invited Lecture in TEQUIP III +CEP Programme Low Cost Technology Development for Physical Pest Management, organized by IIT Delhi- Sonipat Campus.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">14-19 September 2018</div>
+            <div class="talk-title">Ecological Perspective & Growth</div>
+            <div class="talk-details">Invited Lecture in GIAN course -Technical challenges and solutions for resource limited communities organized by IIT Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">14-19 September 2018</div>
+            <div class="talk-title">Water and sanitation solutions for rural communities</div>
+            <div class="talk-details">Invited Lecture in GIAN course -Technical challenges and solutions for resource limited communities organized by IIT Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">7-11 May 2018</div>
+            <div class="talk-title">Sustainability Analysis of Renewable Energy Projects</div>
+            <div class="talk-details">Invited Lecture in One Week Faculty Development Programme on Ethics of Sustainable Technologies in Energy and Environment organized by Galgotia College of Engineering and Technology, NOIDA.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">7-11 May 2018</div>
+            <div class="talk-title">Unnat Bharat Abhiyan and inclusive Technical Education</div>
+            <div class="talk-details">Invited Lecture in One Week Faculty Development Programme on Ethics of Sustainable Technologies in Energy and Environment organized by Galgotia College of Engineering and Technology, NOIDA.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">29th June 2018</div>
+            <div class="talk-title">Understanding the Trade-offs in Water & Wastewater Management for taking informed decisions</div>
+            <div class="talk-details">Plenary Lecture in 3rd National Conference on Pulp and Paper organized by CII, held at Hotel Leela Palace, New Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">15-22 October 2018</div>
+            <div class="talk-title">Ecological Perspective of Growth</div>
+            <div class="talk-details">Special Lecture in Faculty Development Programme on Sustainable Development, organized by ARSD College, University of Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">17-18 April 2018</div>
+            <div class="talk-title">ODF & SLWM (Uttarakhand)</div>
+            <div class="talk-details">Invited Lecture in workshop in Dehradun.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">22-23 February 2018</div>
+            <div class="talk-title">Solid and Liquid Resource Management (SLRM)</div>
+            <div class="talk-details">Plenary Lecture in National Consultative Workshop, Ministry of Drinking Water and Sanitation, New Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">23rd June 2017</div>
+            <div class="talk-title">Exploring the Alternative Approaches for Wastewater Management in Indian Pulp and Paper Industry</div>
+            <div class="talk-details">Special lecture in National Conference on Moving Towards Making Pulp and Paper Sector Water Secure and Sustainable, organized by CII at Hotel Shangri La, New Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">11-12 January 2016</div>
+            <div class="talk-title">Making Smart, Sustainable and Healthy Cities: Learnings from US, China and India</div>
+            <div class="talk-details">Invited Speaker at International Workshop organized by University of Minnesota and ICLEI-SA, held in New Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">10th June 2016</div>
+            <div class="talk-title">Emerging trends in wastewater treatment in paper industry</div>
+            <div class="talk-details">Special lecture in National Conference on “Innovative Water Management strategies towards Enhancing Competitiveness of the Pulp and Paper Industry, organized by CII at Hotel Shangri La, New Delhi.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">10th February 2015</div>
+            <div class="talk-title">Advances in Biological treatment- Recent trends in Pulp and Paper industry</div>
+            <div class="talk-details">Special lecture at CPPRI.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">29th June 2015</div>
+            <div class="talk-title">Advances in Wastewater treatment- AOP and Green Systems</div>
+            <div class="talk-details">Special lecture at CPPRI.</div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-date">World Expo 2000</div>
+            <div class="talk-title">Handmade Paper making in India</div>
+            <div class="talk-details">Invited speaker at World Expo 2000, Hannover, Germany.</div>
+        </li>
+    </ul>
+</section>
+  
+
+    <section id="contact-section" class="professor-info">
+        <!-- Content for Contact Me section -->
+        <h2 style ="color: rgb(232, 56, 56);">Contact Me</h2>
+        <p><strong>Email: </strong>vivekk@iitd.ac.in</p>
+        <p><strong>Office: </strong>Block III - 291, Centre for Rural Development and Technology, IIT Delhi, Hauz Khas, New Delhi, 110016 </p>
+
+        <h3 style ="color: rgb(192, 30, 30);">My research profiles</h4>
+        <a href="mailto:vivekk@iitd.ac.in" style="color: rgb(104, 21, 104); text-decoration: none;"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>
+        <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank" style="color: rgb(104, 21, 104); text-decoration: none; margin-left: 10px;"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        <a href="https://scholar.google.co.in/citations?user=banSojwAAAAJ&hl=en" target="_blank" style="color: rgb(104, 21, 104) ; text-decoration: none; margin-left: 10px;"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Vivek-Kumar-233" target="_blank" style="color: rgb(104, 21, 104); text-decoration: none; margin-left: 10px;"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a>
+        <p>Thank you for visiting!</p>
+    </section>
+
+    <footer>
+      <div class="container" style="margin-left: 40%;">
+          <p style="font-size: medium;">&copy; Vivek Kumar <span id="currentYear"></span> | Last Updated: <span id="lastUpdated"></span></p>
+      </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Update the current year in the footer
+            document.getElementById("currentYear").innerText = new Date().getFullYear();
+          
+            // Update the last updated date (you can customize this part based on your needs)
+            document.getElementById("lastUpdated").innerText = "May, 2024"; // Update with your actual last updated date
+
+            // Add back to top functionality
+            window.onscroll = function () {
+            scrollFunction();
+        };
+        });
+
+        function scrollFunction() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+<style>
+  .container {
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+  }
+  h1, h2 {
+      color: #e83838;
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  }
+  th, td {
+      padding: 10px;
+      /* border: 1px solid #ccc; */
+      text-align: left;
+  }
+  a {
+      color: rgb(117, 16, 126);
+      text-decoration: none;
+  }
+</style>
+</body>
+</html>
