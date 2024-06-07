@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+        .student-profile {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .student-profile img {
+            margin-top: 50px;
+            max-width:220px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .student-profile .details .name {
+            color: darkred;
+            font-weight: bold;
+            font-size: larger;
+            margin-top: 50px;
+        }
+        .student-profile .details {
+            max-width: 1200px;
+        }
+        .student-profile .details .research-topic {
+            font-weight: bold;
+            color: #000000; /* change to desired color */
+        }
+        .student-profile .details .areas-of-research {
+            color: darkred;
+            font-weight: bold;
+        }
+        .student-profile .details .buttons {
+            margin-top: 10px;
+        }
+        .student-profile .details .buttons a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 7px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(135, 11, 11);
+            border-radius: 4px;
+        }
+        .quick-links {
+            background-color: #a20101;
+            padding: 10px 0;
+        }
+
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .quick-links li {
+            margin-right: 20px;
+            font-size:x-large;
+        }
+
+        .quick-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .quick-links a:hover {
+            color: #ffd700;
+        }
+                /* Position the navigation bar fixed at the top */
+        .quick-links {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #5a0b0b; /* Add desired background color */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+    </style>
+    <title>Research Students</title>
+</head>
+<body>
+    <nav class="quick-links">
+        <ul>
+            <li><a href="index.html#home-section">Home</a></li>
+            <li><a href="index.html#awards-section">Awards</a></li>
+            <li><a href="index.html#conferences-section">Conferences</a></li>
+            <li><a href="publications.html">Research Work</a></li>
+            <li><a href="Major projects.html">Major Projects</a></li>
+            <li><a href="students.html">Research Students</a></li>
+            <li><a href="students_newpage.html">Our Team</a></li>
+            <li><a href="index.html#talks-section">Talks</a></li>
+            <li><a href="index.html#contact-section">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    
+            <div class="student-profile">
+                <img src="pics vivek/prerna2.jpg" alt="Project Image 1">
+                <div class="details">
+                    <div class="name">Prerna Patel (DST-INSPIRE Fellow)</div>
+                    <br>
+                    <div>Degree: M.Sc. in Environment Sciences</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B.Sc in Biotechnology</div>    
+                    <!-- <br> -->
+                    <!-- <div>John is passionate about leveraging AI to improve patient outcomes. His work focuses on predictive models for early disease detection.</div>        -->
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Microplastics in Municipal Solid Waste Compost: Impact on Agroecosystems and its mitigations.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Microplastics, Solid waste management, Agroecosystems, Sustainability</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/prerna-patel-4526061a6/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?user=janesmith" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/prerna.jpg" alt="Project Image 1">
+                <div class="details">
+                    <div class="name">Urvashi Singh</div>
+                    <br>
+                    <div>Degree: M.Tech in biotechnology with specialisation in nanotechnology</div>  
+                    <br>
+                    <div>Currently working on an environmental engineering project in Centre for Rural Development at IIT Delhi</div>       
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Development of nanocellulose based food packaging film with improved hydrophobicity and bacterial resistance.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Environmental technology with nano-based biomaterial intervention.</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/urvashi-singh-a93b6786/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?user=janesmith" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/anand.jpg" alt="Project Image 1">
+                <div class="details">
+                    <div class="name">Anand</div>
+                    <br>
+                    <div>Dr. Anand Madhukar presently works as Assistant Professor at TERI School of Advanced Studies, New Delhi, India.</div>       
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Development of nanocellulose based food packaging film with improved hydrophobicity and bacterial resistance.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Environmental technology with nano-based biomaterial intervention.</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/anandmadhukar/" target="_blank">LinkedIn</a>
+                        <a href="https://www.terisas.ac.in/faculty.php?id=189" target="_blank">Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/ajay yadav.jpg" alt="Project Image 1">
+                <div class="details">
+                    <div class="name">Ajay Yadav</div>
+                    <br>
+                    <div>Degree: M.Tech in Electrical Engineering (Instrumentation & Control)</div>   
+                    <!-- <br> -->
+                    <!-- <div>John is passionate about leveraging AI to improve patient outcomes. His work focuses on predictive models for early disease detection.</div>        -->
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Development of Sensor Based Portable Instrument to Test Milk Quality.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Instrumentation systems and sensor Design</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/janesmith" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?user=janesmith" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/Amrita.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <div class="details">
+                    <div class="name">Amrita Preetam</div>
+                    <br>
+                    <div>Degree: Chemical Engineering </div>
+                    <br>
+                    <div>Amrita is pursuing her PhD from IIT Delhi. She is working on development of green process for the recovery of metals from electronic waste and conversion of e waste plastics into valuable products with different techniques like supercritical fluids, hydrometallurgy, adsorption and others. Her background is chemical engineering and she is skilled in metal extraction, plastic decomposition, experimental design, and several research techniques.</div>       
+                    <br>
+                    She is jointly supervised by Prof. Vivek Kumar, Prof.K.K.Pant, and Prof.S.N.Naik.
+                    <br>
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Development of a green process for the recovery of metals and conversion of e-waste plastic into oil (chemicals)</u></div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/amrita-preetam-385705a3/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.co.in/citations?user=qMAVC_oAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/vikram K Porwal.jpeg" alt="Project Image 1">
+                <div class="details">
+                    <div class="name">Vikram K Porwal</div>
+                    <!-- <br>
+                    <div>Degree: M.Sc. in Environment Sciences</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B.Sc in Biotechnology</div>     -->
+                    <br>
+                    <div>Part-Time Research Scholar, doing PhD in Comparative studey of Cattle Rearing Tribes of India and South Sudan. Presently serving as DCP Economic Offences Wing, with Delhi Police. Also served as Police Advisor in the UN Mission in South Sudan.
+                    </div>       
+                    <br>
+                    <!-- <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Green synthesis of nanolignin and its application in food packaging.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Biomass valorization, active packaging, circular economy, nanotechnology and waste to wealth.</div> -->
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/vikram-k-porwal-03949517/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?user=janesmith" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/Pratishtha Kumari.jpg" alt="Project Image 1">
+                <div class="details">
+                    <div class="name">Pratishtha Kumari</div>
+                    <br>
+                    <div>Degree: PhD, Lignin valorization</div>  
+                    <!-- <br> -->
+                    <!-- <div>John is passionate about leveraging AI to improve patient outcomes. His work focuses on predictive models for early disease detection.</div>        -->
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Green synthesis of nanolignin and its application in food packaging.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Biomass valorization, active packaging, circular economy, nanotechnology and waste to wealth.</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/pratishtha-kumari-706967167/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?user=janesmith" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/Dr. Rachana Jain.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <div class="details">
+                    <div class="name">Dr. Rachana Jain</div>
+                    <br>
+                    <div>Degree: Young Scientist, SYST SEED-DST Project </div>  
+                    <br>
+                    <div>Dr. Rachana Jain, a Young Scientist with the SYST SEED-DST Project, earned her PhD in Agricultural Microbiology and Biotechnology from Banasthali University, India. Her research focused on the Characterization of Phosphate Solubilizing Fungi from Semi-Arid Agricultural Soil. Following her doctoral studies, She was awarded the SERB Fast Tract Grant, where she served as Principal Investigator. Subsequently, she joined the Indian Institute of Technology (IIT), Delhi, as a post-doctoral researcher, concentrating on enzyme synthesis from agricultural and oil industry waste via solid-state fermentation. She later undertook another project from DST-SEED, focusing on agricultural waste management and promoting organic farming in rural India.</div>       
+                    <br>
+                    <!-- <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Green synthesis of nanolignin and its application in food packaging.</u></div> -->
+                    <!-- <br> -->
+                    <!-- <div><span class="areas-of-research">Areas of Research: </span>Biomass valorization, active packaging, circular economy, nanotechnology and waste to wealth.</div> -->
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/dr-rachana-jain-0494252a/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=4AdMSGsAAAAJ" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/Yash Jain.jpeg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <div class="details">
+                    <div class="name">Yash Jain</div>
+                    <br>
+                    <div>Degree: M.Sc. in Environment Management with specialization in Atmospheric Sciences. </div>  
+                    <br>
+                    <div>Works on air quality monitoring and modelling with specialization in carrying out source apportionment studies of ambient PM2.5 and associated chemical constituents using receptor model such as USEPA PMF 5.0.</div>       
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Source identification and apportionment of ambient PM2.5 in two non-attainment cities of India: An urban rural interface study.</u></div>
+                    <!-- <br> -->
+                    <!-- <div><span class="areas-of-research">Areas of Research: </span>Biomass valorization, active packaging, circular economy, nanotechnology and waste to wealth.</div> -->
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/yash-jain-a605a617b/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=4AdMSGsAAAAJ" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/Pooja Yadav.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <div class="details">
+                    <div class="name">Pooja Yadav</div>
+                    <br>
+                    <div>Degree: M.Sc. in Environment Management with specialization in Atmospheric Sciences. </div>  
+                    <br>
+                    <div>Awards: Graduate Research Award (GRA) from MITACS Canada.</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Research Trainee funded by SRSF</div>         
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Nanofiber membrane-based water treatment systems for desalination and heavy
+                        metals removal.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Water quality, Water treatment processes, Desalination, Adsorption,Nano-composite membranes: fabrication, modification &amp; characterization, Nano-adsorbents, Heavy metal removal, Electrospun nanofiber membranes (ENMs),</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/yash-jain-a605a617b/" target="_blank">LinkedIn</a>
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId=59029525900" target="_blank">Scopus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-profile">
+                <img src="pics vivek/monalisa.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <div class="details">
+                    <div class="name">Monalisa Sahoo</div>
+                    <br>
+                    <div>Degree: Postdoctoral researcher, Department of Plant Breeding</div>  
+                    <br>
+                    <div>Major research domain: Processing and Food Engineering</div> 
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Processing of wild yam (Dioscorea SPP) for development of functional foods.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Drying technology, Novel product development, sensory and consumer science, Extraction, bioactive components</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/monalisa-sahoo-68454868/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=8wsHBw4AAAAJ" target="_blank">Google Scholar</a>
+                        <a href="https://www.researchgate.net/profile/Monalisa-Sahoo-4" target="_blank">ResearchGate</a>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
