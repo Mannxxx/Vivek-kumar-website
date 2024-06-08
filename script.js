@@ -19,24 +19,6 @@ function copyToClipboard() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll('.slideshow-container img');
-    let currentIndex = 0;
-
-    function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        images[currentIndex].classList.add('previous');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-
-        setTimeout(() => {
-            images.forEach(img => img.classList.remove('previous'));
-        }, 1000); // This timeout should match the transition duration
-    }
-
-    setInterval(showNextImage, 3000);
-});
-
-document.addEventListener("DOMContentLoaded", function() {
     const linkedinLinks = document.querySelectorAll(".linkedin-link");
     
     linkedinLinks.forEach(link => {
@@ -63,3 +45,14 @@ function fetchLinkedInProfile(link) {
         });
 }
 
+
+const images = document.querySelectorAll('.slideshow-container img');
+let currentIndex = 0;
+
+function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+}
+
+setInterval(showNextImage, 3000);

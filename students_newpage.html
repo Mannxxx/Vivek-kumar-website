@@ -16,6 +16,7 @@
         }
         .student-profile img {
             margin-top: 50px;
+            margin-left: 60px;
             max-width:220px;
             height: auto;
             margin-right: 20px;
@@ -87,6 +88,69 @@
             background-color: #5a0b0b; /* Add desired background color */
             z-index: 1000; /* Ensure it's above other content */
         }
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            width:100%;
+            max-width: 1000px;
+            height: 950px;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #000;
+        }
+
+        /* Slideshow images */
+        .slideshow-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out, left 1s ease-in-out;
+        }
+
+        .slideshow-container img.active {
+            left: 0;
+            opacity: 1;
+        }
+
+        .slideshow-container img.previous {
+            left: -100%;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            width: 80%;
+            max-width: 1200px;
+            height: 600px;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #000;
+        }
+
+        /* Slideshow images */
+        .slideshow-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out, left 1s ease-in-out;
+        }
+
+        .slideshow-container img.active {
+            left: 0;
+            opacity: 1;
+        }
+
+        .slideshow-container img.previous {
+            left: -100%;
+        }
     </style>
     <title>Research Students</title>
 </head>
@@ -105,7 +169,34 @@
         </ul>
     </nav>
 
-    
+    <section id="student-newpage" class="students_newpage">
+        <h2 style="color: rgb(232, 56, 56); margin-top: 60px;"><center>Our Team</center></h2>
+
+        <div class="slideshow-container">
+            <img src="pics vivek/group1.jpg" class="active" alt="Group Photo 1">
+            <img src="pics vivek/group2.jpg" alt="Group Photo 2">
+            <img src="pics vivek/group3.jpg" alt="Group Photo 3">
+        </div>
+        <script src="script.js"></script>
+
+
+            <div class="student-profile">
+                <img src="pics vivek/shubhanjali kori.jpg" alt="Project Image 1" style="width: 220px; height: 240px;">
+                <div class="details">
+                    <div class="name">Shubhanjali Kori</div>
+                    <br>
+                    <div>Degree: PhD, Centre for rural development and technology</div>  
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Framework for assessment of remediation processes of liquid waste management technology in rural areas of India.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Aquaculture, Waste water treatment technologies, sustainability, agriculture, water quality assessment, survey and sampling, rural development.</div>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/shubhanjali-kori-b726b1130/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=kTVJVgIAAAAJ&gmla=AOAOcb2dd0EXvForSAKQpL2zZ16tSZ59xq54Nr27JFjNUfrLQg5mz2LYKMxaAFEiJW_zsZPq47b09gULkiyHiy5FQI39imtmtOtTCXfrvr0" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="student-profile">
                 <img src="pics vivek/prerna2.jpg" alt="Project Image 1">
                 <div class="details">
@@ -319,5 +410,6 @@
                     </div>
                 </div>
             </div>
+        </section>
 </body>
 </html>
