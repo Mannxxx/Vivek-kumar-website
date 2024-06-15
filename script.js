@@ -56,3 +56,30 @@ function showNextImage() {
 }
 
 setInterval(showNextImage, 3000);
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Update the current year in the footer
+    document.getElementById("currentYear").innerText = new Date().getFullYear();
+  
+    // Update the last updated date (you can customize this part based on your needs)
+    document.getElementById("lastUpdated").innerText = "May, 2024"; // Update with your actual last updated date
+
+    // Add back to top functionality
+    window.onscroll = function () {
+    scrollFunction();
+};
+});
+
+function scrollFunction() {
+    var backToTopBtn = document.getElementById("backToTopBtn");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

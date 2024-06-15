@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .quick-links {
@@ -11,6 +12,7 @@ body {
 
 .quick-links ul {
     list-style: none;
+    font-style: italic;
     padding: 0;
     margin: 0;
     display: flex;
@@ -82,6 +84,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 35px;
     background-color: #5a0b0b; /* Add desired background color */
     z-index: 1000; /* Ensure it's above other content */
 
@@ -292,4 +295,163 @@ header {
 
 .current-position {
     text-align: center;
+}
+
+.students-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.students-details {
+    /* border: 1px solid #ccc; */
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    width: 360px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+/* .students-details img {
+    border-radius: 50%;
+} */
+
+.students-details h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.students-details p {
+    margin: 5px 0;
+    color: #484747;
+    font-size: 15px;
+}
+
+.students-details .title {
+    color: #484747;
+    text-align: center;
+    font-size: 18px;
+}
+
+.students-details .co-supervisor {
+    /* font-weight: bold; */
+    font-size: 15px;
+    color: #484747;
+}
+
+.students-details a {
+    color: rgb(117, 16, 126);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.students-details a i {
+    margin-right: 5px;
+}
+
+ /* Float four columns side by side */
+ .research-column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .research-row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .research-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .research-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Style the counter cards */
+  .research-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 50px;
+    /* text-align: center; */
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    /* height:auto; */
+    /* position: relative; */
+  } 
+  
+  /* Style the citation and view button */
+    .citation {
+    font-style: italic;
+    color: #555;
+  }
+
+  .view-button {
+    display: inline-block;
+    bottom: 10px;
+    margin-left: 130px;
+    margin-top: 10px;
+    /* transform: translateX(-50%); */
+    padding: 8px 16px;
+    background-color: #020594;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor:pointer;
+  }
+  
+  .view-button:hover {
+    background-color: #020594;
+  }
+
+  .read-more {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .show-content .read-more {
+    display: block;
+}
+
+.skills-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+h1, h2 {
+    color: #e83838;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    text-align: left;
+}
+a {
+    color: rgb(117, 16, 126);
+    text-decoration: none;
 }
