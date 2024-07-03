@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Example</title>
+    <style>
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .content {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="buttons">
+    <button onclick="showArticle('apple')">Apple Article</button>
+    <button onclick="showArticle('banana')">Banana Article</button>
+    <button onclick="showStudents('current')">Current Researchers</button>
+    <button onclick="showStudents('past')">Past Graduates</button>
+</div>
+
+<div id="articleContent" class="content">
+    Click a button to display an article or list of students.
+</div>
+
+<script>
+    function showArticle(fruit) {
+        let content = '';
+        if (fruit === 'apple') {
+            content = `
+                <h2>Apple</h2>
+                <p>Apples are nutritious fruits that come in a variety of flavors and colors. They are a good source of fiber and vitamin C.</p>
+                <p>Apples can be eaten fresh, cooked into desserts, or made into apple cider. They have been linked to several health benefits, including improved heart health and reduced risk of certain cancers.</p>
+            `;
+        } else if (fruit === 'banana') {
+            content = `
+                <h2>Banana</h2>
+                <p>Bananas are tropical fruits that are rich in potassium and vitamin B6. They are known for their sweet taste and creamy texture.</p>
+                <p>Bananas can be eaten on their own, added to cereals and smoothies, or used in baking. They are particularly beneficial for digestive health due to their high fiber content.</p>
+            `;
+        }
+        document.getElementById('articleContent').innerHTML = content;
+    }
+
+    function showStudents(type) {
+        let content = '';
+        if (type === 'current') {
+            content = `
+                <h2>Current Researchers</h2>
+                <ul>
+                    <li>John Doe</li>
+                    <li>Jane Smith</li>
+                    <li>Emily Johnson</li>
+                    <li>Michael Brown</li>
+                </ul>
+            `;
+        } else if (type === 'past') {
+            content = `
+                <h2>Past Graduates</h2>
+                <ul>
+                    <li>Chris Wilson</li>
+                    <li>Patricia Miller</li>
+                    <li>Robert Davis</li>
+                    <li>Linda Martinez</li>
+                </ul>
+            `;
+        }
+        document.getElementById('articleContent').innerHTML = content;
+    }
+</script>
+
+</body>
+</html>

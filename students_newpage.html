@@ -90,16 +90,16 @@
             z-index: 1000; /* Ensure it's above other content */
         }
         /* Slideshow container */
-        .slideshow-container {
+        /* .slideshow-container {
             position: relative;
             width:100%;
             max-width: 1000px;
-            height: 950px;
+            height: 105px;
             margin: auto;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background: #000;
-        }
+        } */
 
         /* Slideshow images */
         .slideshow-container img {
@@ -126,7 +126,7 @@
             position: relative;
             width: 80%;
             max-width: 1200px;
-            height: 600px;
+            height: 680px;
             margin: auto;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -167,6 +167,31 @@
             filter: blur(5px);
             z-index: -1;
         }
+
+        .buttons2 button {
+            padding: 10px 20px;
+            margin-top: 80px;
+            margin-left: 4px;
+            font-size: 1.2em; /* Increased font size */
+            border: 2px solid darkred; /* Added border */
+            background-color: #a20101;
+            color: white;
+            border-radius: 4px;
+            width: 750px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .buttons2 button:hover {
+            background-color: darkred;
+            border-color: #ffd700; /* Change border color on hover */
+        }
+
+        .content {
+            border: 1px solid #ffffff;
+            padding: 20px;
+            /* border-radius: 8px; */
+            background-color: #ffffff;
+        }
     </style>
     <title>Research Students</title>
 </head>
@@ -177,7 +202,6 @@
             <li><a href="research areas.html">Research Areas</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="Major projects.html">Major Projects</a></li>
-            <!-- <li><a href="students.html">Research Students</a></li> -->
             <li><a href="students_newpage.html">Research Scholars</a></li>
             <li><a href="conferences.html">Conferences</a></li>
             <li><a href="contact.html">Contact Me</a></li>
@@ -185,19 +209,30 @@
     </nav>
 
     <section id="student-newpage" class="students_newpage">
-        <h2 style="margin-top: 60px;"><center>Photo Gallery</center></h2>
-
-        <div class="slideshow-container">
+        <!-- <h2 style="margin-top: 60px;"><center>Photo Gallery</center></h2> -->
+        <div class="slideshow-container" style="margin-top: 50px;">
             <img src="pics vivek/group2.jpg" class="active" alt="Group Photo 1">
             <img src="pics vivek/group3.jpg" alt="Group Photo 2">
-            <!-- <img src="pics vivek/group3.jpg" alt="Group Photo 3"> -->
         </div>
+
         <script src="script.js"></script>
 
-        <h2 style="color: rgb(232, 56, 56); margin-top: 5%; text-decoration: underline;"><center>List of current research scholars</center></h2>
+        <div class="buttons2">
+            <button onclick="showStudents('current')">Current Researchers</button>
+            <button onclick="showStudents('past')">Past Graduates</button>
+        </div>
+        <div id="articleContent" class="content">
+            <!-- Default content will be loaded here -->
+        </div>
+    </section>
 
-
-            <div class="student-profile">
+    <script>
+        function showStudents(type) {
+            let content = '';
+            if (type === 'current') {
+                content = `
+                    <h2 style="color: rgb(232, 56, 56); margin-top: 5%; text-decoration: underline;"><center>List of Current Research Scholars</center></h2>
+                    <div class="student-profile">
                 <img src="pics vivek/shubhanjali kori.jpg" alt="Project Image 1" style="width: 220px; height: 240px;">
                 <div class="details">
                     <div class="name">Shubhanjali Kori</div>
@@ -290,7 +325,7 @@
             </div>
 
             <div class="student-profile">
-                <img src="pics vivek/Amrita.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <img src="pics vivek/Amrita.jpg" alt="Project Image 1" style="width: 340px; height: 260px;">
                 <div class="details">
                     <div class="name">Amrita Preetam</div>
                     <br>
@@ -350,7 +385,7 @@
             </div>
 
             <div class="student-profile">
-                <img src="pics vivek/Dr. Rachana Jain.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <img src="pics vivek/Dr. Rachana Jain.jpg" alt="Project Image 1" style="width: 360px; height: 270px;">
                 <div class="details">
                     <div class="name">Dr. Rachana Jain</div>
                     <br>
@@ -388,7 +423,7 @@
             </div>
 
             <div class="student-profile">
-                <img src="pics vivek/Pooja Yadav.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <img src="pics vivek/Pooja Yadav.jpg" alt="Project Image 1" style="width: 260px; height: 260px;">
                 <div class="details">
                     <div class="name">Pooja Yadav</div>
                     <br>
@@ -409,7 +444,7 @@
             </div>
 
             <div class="student-profile">
-                <img src="pics vivek/monalisa.jpg" alt="Project Image 1" style="width: 220px; height: 220px;">
+                <img src="pics vivek/monalisa.jpg" alt="Project Image 1" style="width: 240px; height: 240px;">
                 <div class="details">
                     <div class="name">Monalisa Sahoo</div>
                     <br>
@@ -447,6 +482,96 @@
                     <!-- </div> -->
                 </div>
             </div>
-        </section>
+
+            <div class="student-profile">
+                <img src="pics vivek/sanjar.jpg" alt="Project Image 1" style="width: 380px; height: 250px;">
+                <div class="details">
+                    <div class="name">Sanjar Ali</div>
+                    <br>
+                    <div>Degree: Architecture from the NIT Patna</div> 
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Master's in Environmental Planning from the School of Planning and Architecture, Delhi</div> 
+                    <br>
+                    <div>Sanjar Ali is a part-time scholar at the Centre for Rural Development and Technology (CRDT) at IIT Delhi.</div> 
+                    <br>
+                    <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Sanjar's research at IIT Delhi focuses on identifying sources of air pollution in both rural and urban areas, with a special emphasis on unrecognized sectors and their contributions. His work involves geo-spatial mapping and analysis, policy assessment, environmental economics, and data collation and analysis.</u></div>
+                    <br>
+                    <div><span class="areas-of-research">Areas of Research: </span>Air quality, land use planning, activity analysis, and the development of emissions inventories.</div>
+                    <div class="buttons"> 
+                        <a href="https://www.linkedin.com/in/sanjar-ali-304658170/" target="_blank">LinkedIn</a>
+                        <a href="https://www.researchgate.net/profile/Sanjar-Ali-2" target="_blank">ResearchGate</a> 
+                    </div>
+                </div>
+            </div>
+                `;
+            } else if (type === 'past') {
+                content = `
+                    <h2 style="color: rgb(232, 56, 56); margin-top: 5%; text-decoration: underline;"><center>List of Past Graduates</center></h2>
+                    <div class="student-profile">
+                        <img src="pics vivek/Dr. Rachana Jain.jpg" alt="Project Image 1" style="width: 340px; height: 270px;">
+                        <div class="details">
+                            <div class="name">Dr. Rachana Jain</div>
+                            <br>
+                            <div>Degree: Young Scientist, SYST SEED-DST Project </div>  
+                            <br>
+                            <div>Dr. Rachana Jain, a Young Scientist with the SYST SEED-DST Project, earned her PhD in Agricultural Microbiology and Biotechnology from Banasthali University, India. Her research focused on the Characterization of Phosphate Solubilizing Fungi from Semi-Arid Agricultural Soil. Following her doctoral studies, She was awarded the SERB Fast Tract Grant, where she served as Principal Investigator. Subsequently, she joined the Indian Institute of Technology (IIT), Delhi, as a post-doctoral researcher, concentrating on enzyme synthesis from agricultural and oil industry waste via solid-state fermentation. She later undertook another project from DST-SEED, focusing on agricultural waste management and promoting organic farming in rural India.</div>       
+                            <br>
+                            <!-- <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Green synthesis of nanolignin and its application in food packaging.</u></div> -->
+                            <!-- <br> -->
+                            <!-- <div><span class="areas-of-research">Areas of Research: </span>Biomass valorization, active packaging, circular economy, nanotechnology and waste to wealth.</div> -->
+                            <div class="buttons">
+                                <a href="https://www.linkedin.com/in/dr-rachana-jain-0494252a/" target="_blank">LinkedIn</a>
+                                <a href="https://scholar.google.com/citations?hl=en&user=4AdMSGsAAAAJ" target="_blank">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-profile">
+                        <img src="pics vivek/vikram K Porwal.jpeg" alt="Project Image 1">
+                        <div class="details">
+                            <div class="name">Vikram K Porwal</div>
+                            <!-- <br>
+                            <div>Degree: M.Sc. in Environment Sciences</div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B.Sc in Biotechnology</div>     -->
+                            <br>
+                            <div>Part-Time Research Scholar, doing PhD in Comparative studey of Cattle Rearing Tribes of India and South Sudan. Presently serving as DCP Economic Offences Wing, with Delhi Police. Also served as Police Advisor in the UN Mission in South Sudan.
+                            </div>       
+                            <br>
+                            <!-- <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Green synthesis of nanolignin and its application in food packaging.</u></div>
+                            <br>
+                            <div><span class="areas-of-research">Areas of Research: </span>Biomass valorization, active packaging, circular economy, nanotechnology and waste to wealth.</div> -->
+                            <div class="buttons">
+                                <a href="https://www.linkedin.com/in/vikram-k-porwal-03949517/" target="_blank">LinkedIn</a>
+                                <a href="https://scholar.google.com/citations?user=janesmith" target="_blank">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="student-profile">
+                        <img src="pics vivek/smita.jpg" alt="Project Image 1">
+                        <div class="details">
+                            <div class="name">Dr. Smita</div>
+                            <br>
+                            <div>Degree: Post-doctoral research at CRDT, IIT-Delhi from 2017-2019.</div>
+                            <br>
+                            <!-- <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B.Sc in Biotechnology</div> -->
+                            <div>Dr. Smita is an Assistant Professor at the Central University of Haryana in Jant-Pali, Mahendergarh. </div>      
+                            <!-- <div class="research-topic"><u><span class="areas-of-research">Research Topic: </span>Green synthesis of nanolignin and its application in food packaging.</u></div> -->
+                            <br>
+                            <div><span class="areas-of-research">Areas of Research: </span>Environmental Science & Engineering such as Water and Wastewater Treatment, Bio-energy Production, and Bioremediation.</div>
+                            <div class="buttons">
+                                <a href="https://www.linkedin.com/in/vikram-k-porwal-03949517/" target="_blank">LinkedIn</a>
+                                <a href="https://scholar.google.com/citations?user=janesmith" target="_blank">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            document.getElementById('articleContent').innerHTML = content;
+        }
+
+        // Show Current Researchers by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showStudents('current');
+        });
+    </script>
 </body>
 </html>
